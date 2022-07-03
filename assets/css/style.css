@@ -52,7 +52,7 @@ justify-content: space-between;
 .headerColeccion{
     grid-area: header;
     display: flex;
-    background-image: url(../img/New\ colection.png);
+    background-image: url(../img/new\ colection.jpg);
     background-size: cover;
     place-content: center;
 }
