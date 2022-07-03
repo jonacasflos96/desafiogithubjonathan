@@ -7,7 +7,7 @@
 .container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 65px 500px 90px auto 90px;
+    grid-template-rows: 65px 500px 90px auto 130px;
     grid-template-areas: "navbar  navbar  navbar  navbar"
                          "header  header  header  header"
                          "sidebar sidebar sidebar sidebar"
@@ -47,7 +47,8 @@ justify-content: space-between;
     display: flex;
     background-image: url(../img/New\ colection.png);
     background-size: cover;
-    justify-content: center;
+    width: 100%;
+    place-content: center;
 }
 .headerColeccion{
     grid-area: header;
@@ -87,6 +88,43 @@ justify-content: space-between;
     flex-wrap: wrap;
     grid-template-columns: repeat(3,1fr);
     text-align: center;
+    place-content: center;
+}
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-items: center;
+    border: 1px solid rgb(190, 188, 188);
+    margin: 40px 80px 40px 80px;
+    border-radius: 20px;
+    padding: 30px;
+}
+.tarjeta img{
+    width: 200px;
+    border: 1px solid teal;
+    margin: 10px;
+
+}
+.tarjetaTitulo{
+    font-size: 16px;
+    width: 100%;
+    color: teal;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.tarjetaPrecio{
+    background-color: white;
+    font-weight: 500;
+}
+.btn{
+    background-color: teal;
+    padding: 8px 12px;
+    margin-top: 10px;
+    color: white;
+    border: 8px;
+    border-radius: 5px;
 }
 .footer{
     grid-area: footer;
